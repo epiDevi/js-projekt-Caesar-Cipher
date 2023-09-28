@@ -13,7 +13,7 @@ const encoder = () => {
     for (const char of inputtext) {
         charAscii = (char.charCodeAt(0))+numKey;
         if(charAscii > 90){
-            charAscii= charAscii % 90 + 64 ;
+            charAscii= charAscii - 90 + 64 ;
         }
         caesar+= String.fromCharCode((charAscii));
     }
